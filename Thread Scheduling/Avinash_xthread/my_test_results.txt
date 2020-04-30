@@ -1,0 +1,169 @@
+----------------- Test1 ----------------------
+
+Finish main
+XT: Old threads never die; they just fade away. (id:0)
+This is foo 7, 0
+This is bar 20, 0
+This is foo 7, 1
+This is bar 20, 1
+This is foo 7, 2
+This is bar 20, 2
+This is bar 20, 3
+This is foo 7, 3
+This is foo 7, 4
+This is bar 20, 4
+This is bar 20, 5
+This is foo 7, 5
+This is foo 7, 6
+This is bar 20, 6
+This is bar 20, 7
+This is foo 7, 7
+This is foo 7, 8
+This is bar 20, 8
+This is bar 20, 9
+This is foo 7, 9
+This is bar 20, 10
+This is foo 7, 10
+This is bar 20, 11
+This is foo 7, 11
+This is bar 20, 12
+This is foo 7, 12
+This is bar 20, 13
+This is foo 7, 13
+This is bar 20, 14
+This is foo 7, 14
+This is foo 7, 15
+This is bar 20, 15
+This is bar 20, 16
+This is foo 7, 16
+This is foo 7, 17
+This is bar 20, 17
+This is bar 20, 18
+This is foo 7, 18
+This is bar 20, 19
+This is foo 7, 19
+XT: Old threads never die; they just fade away. (id:2)
+XT: Old threads never die; they just fade away. (id:1)
+XT: no threads to run!
+
+------------------ Test2 ---------------------
+
+Finish main
+XT: Old threads never die; they just fade away. (id:0)
+This is foo 7, 0
+This is foo 7, 1
+This is foo 7, 2
+This is foo 7, 3
+This is foo 7, 4
+This is foo 7, 5
+This is foo 7, 6
+This is foo 7, 7
+This is foo 7, 8
+This is foo 7, 9
+This is foo 7, 10
+This is foo 7, 11
+This is foo 7, 12
+This is foo 7, 13
+This is foo 7, 14
+This is foo 7, 15
+This is foo 7, 16
+This is foo 7, 17
+This is foo 7, 18
+This is foo 7, 19
+This is foo 7, 20
+This is foo 7, 21
+This is foo 7, 22
+This is foo 7, 23
+This is foo 7, 24
+This is foo 7, 25
+This is foo 7, 26
+This is foo 7, 27
+This is foo 7, 28
+This is foo 7, 29
+This is foo 7, 30
+This is foo 7, 31
+This is foo 7, 32
+This is foo 7, 33
+This is foo 7, 34
+This is foo 7, 35
+This is foo 7, 36
+This is foo 7, 37
+This is foo 7, 38
+This is foo 7, 39
+This is foo 7, 40
+This is foo 7, 41
+This is foo 7, 42
+This is foo 7, 43
+This is foo 7, 44
+This is foo 7, 45
+This is foo 7, 46
+This is foo 7, 47
+This is foo 7, 48
+This is foo 7, 49
+XT: Old threads never die; they just fade away. (id:1)
+XT: no threads to run!
+
+--------------------- Test3 --------------------
+
+XT: Old threads never die; they just fade away. (id:0)
+***** Enter foo...
+***** Enter bar...
+***** oof: exit with status = 54321
+XT: Old threads never die; they just fade away. (id:3)
+***** foo:  join oof status (54321) = 54321 and ret (0)= 0
+XT: Old threads never die; they just fade away. (id:1)
+***** bar:  join oof status (54321) = 54321 and ret (0)= 0
+XT: Old threads never die; they just fade away. (id:2)
+XT: no threads to run!
+
+---------------------- Test4 --------------------
+
+XT: Old threads never die; they just fade away. (id:0)
+***** oof: exit with status = 54321
+XT: Old threads never die; they just fade away. (id:1)
+***** Enter foo...
+***** foo:  join oof status (54321) = 54321 and ret (0)= 0
+XT: Old threads never die; they just fade away. (id:2)
+XT: no threads to run!
+
+---------------------- Test5 --------------------
+
+XT: Old threads never die; they just fade away. (id:0)
+***** Enter foo...
+***** Enter bar...
+***** Enter oof...
+***** rab: exit with status = 888
+XT: Old threads never die; they just fade away. (id:4)
+***** oof:  join rab status (888) = 888 and ret (0)= 0
+XT: Old threads never die; they just fade away. (id:3)
+***** bar:  join oof status (666) = 666 and ret (0)= 0
+XT: Old threads never die; they just fade away. (id:2)
+***** foo:  join bar status (333) = 333 and ret (0)= 0
+XT: Old threads never die; they just fade away. (id:1)
+XT: no threads to run!
+
+----------------------- Test6 --------------------
+
+***** Enter foo ...
+***** foo: join myself ret (-1) = -1
+XT: Old threads never die; they just fade away. (id:1)
+***** xmain: join foo status (0) = 0, ret (0) = 0
+***** xmain: join non-exist foo ret (-2) = 0
+XT: Old threads never die; they just fade away. (id:0)
+XT: no threads to run!
+
+------------------------ Test7 --------------------
+
+XT: Old threads never die; they just fade away. (id:0)
+*** This is goo 20, 1
+*** This is hoo 6, 2
+*** This is goo 20, 3
+*** This is hoo 6, 4
+*** This is goo 20, 5
+XT: Old threads never die; they just fade away. (id:2)
+*** This is hoo 6, 6
+*** The last word from goo: 5
+XT: Old threads never die; they just fade away. (id:3)
+*** The last word from hoo: 6
+XT: Old threads never die; they just fade away. (id:1)
+XT: no threads to run!
